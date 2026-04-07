@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoVisit - Your Vacation Planner</title>
+    <!-- MaterializeCSS CDN  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+    html {
+      font-family: "Asimovian", sans-serif;
+    }
+    .rounded-edges {
+      border-radius: 15px !important;
+    }
+  </style>
+</head>
+<body>
+<div class="hide-on-small-and-down">
+  <header>
+    <!-- Slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <video src="img/7031082_Above_Aerial_1280x720.mp4" width="100%" autoplay loop class="responsive-video"></video>
+          <div class="caption center-align">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Introduction -->
+    <div class="container section">
+      <h1>GoVisit</h1>
+      <p class="flow-text">Plan the perfect getaway with GoVisit. Discover top destinations, create custom itineraries, and book unforgettable experiences—all in one place.</p>
+    </div>
+  </header>
+  <main>
+    <!-- Section 1 - CHoose Your Destination -->
+    <section class="section blue lighten-5">
+      <div class="container">
+        <div class="row valign-wrapper section">
+          <div class="col s12 m6 l6">
+            <img src="img/vacation_1.jpg" alt="" class="responsive-img rounded-edges z-depth-1 hoverable">
+          </div>
+          <div class="col s12 l1 hide-on-med-only"></div>
+          <div class="col s12 m6 l5">
+            <h4 class="blue-text text-darken-4">Choose your destination</h4>
+            <p class="flow-text">Browse our curated list of destinations, from tropical beaches to vibrant cities. Each location features travel guides, and top attractions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 - Travel -->
+    <section class="section grey lighten-4">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s12 m6 l5">
+            <h4 class="grey-text text-darken-4">Get travel tips</h4>
+            <p class="flow-text">We provide guidance on transportation options, travel safety, and local customs to make your journey smooth and enjoyable.</p>
+          </div>
+          <div class="col s12 l1 hide-on-med-only"></div>
+          <div class="col s12 m6 l6">
+            <img src="img/vacation_3.jpg" alt="Travel" class="responsive-img rounded-edges z-depth-1 hoverable">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 - Cuisine -->
+    <section class="section red lighten-5">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s12 m6 l6">
+            <img src="img/vacation_2.jpg" alt="Cuisine" class="responsive-img rounded-edges z-depth-1 hoverable">
+          </div>
+          <div class="col s12 l1 hide-on-med-only"></div>
+          <div class="col s12 m6 l5">
+            <h4 class="red-text text-darken-4">Experience fine cuisine</h4>
+            <p class="flow-text">GoVisit highlights local restaurants, street food, and culinary tours so you can savor authentic dishes and discover new favorites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 - Activities -->
+    <section class="section grey lighten-5">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s12 m6 l5">
+            <h4>Fun actvities for you</h4>
+            <p class="flow-text">Whether you love adventure, relaxation, or cultural experiences, we recommend tours, excursions, and events to match your interests. </p>
+          </div>
+          <div class="col s12 l1 hide-on-med-only"></div>
+          <div class="col s12 m6 l6">
+            <img src="img/vacation_4.jpg" alt="Activities" class="responsive-img rounded-edges z-depth-1 hoverable">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</div>
+<div class="hide-on-med-and-up">
+  <p class="center-align">Website can only be viewed on PC</p>
+</div>
+
+  <!-- Scripts Below -->
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+      $('.slider').slider({indicators: false, height: 750});
+    });
+  </script>
+</body>
+</html>
